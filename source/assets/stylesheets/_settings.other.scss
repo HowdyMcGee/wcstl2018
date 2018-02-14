@@ -38,11 +38,10 @@ $box-shadow-medium:             0 rem(1) rem(6) 0 rgba(0,0,0,.2);
 $box-shadow-large:              0 rem(1) rem(24) 0 rgba(0,0,0,.2);
 
 /* Logo size */
-$site-logo-width:               360px; // Width of the image/element
-$site-logo-height:              360px; // Height of the image/element
-$site-logo-proportion:          .5; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
-$site-logo-path:                url('https://s.w.org/about/images/logos/wordpress-logo-notext-rgb.png'); // Logo image
-// $site-logo-path:                url('https://2017.europe.wordcamp.org/files/2016/11/logo-wceu17-dark-icon.png'); // Logo image
+$site-logo-width:               420px; // Width of the image/element
+$site-logo-height:              348px; // Height of the image/element
+$site-logo-proportion:          .7; // Change the logo proportion in header e.g. .5 will reduce the logo size by half.
+$site-logo-path:                url('https://2018.stlouis.wordcamp.org/files/2018/02/logo.png'); // Logo image
 
 /* Hero */
 $site-hero-path-small:          url('https://c2.staticflickr.com/8/7342/27927265956_6755e5913e_b.jpg'); // Background image
@@ -58,7 +57,8 @@ $large-value:                   62em; // 992px
 $extra-large-value:             80em; // 1280px
 
 /* Background images */
-$image-pattern-01:              url('https://2017.europe.wordcamp.org/files/2017/01/background-pattern-01.png');
+$image-cityscape:				url('https://2018.stlouis.wordcamp.org/files/2018/02/bgr-footer.png');
+$image-pattern-01:              url('https://2018.stlouis.wordcamp.org/files/2018/02/fleur-de-lis-bg.jpg');
 $image-realistic-ticket:        url('https://2017.europe.wordcamp.org/files/2017/01/realistic-ticket.png');
-$image-bullet-color:            url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-color.png');
-$image-bullet-dark:             url('https://2017.europe.wordcamp.org/files/2017/01/decoration-bullet-dark.png');
+$image-bullet-color:            url('https://2018.stlouis.wordcamp.org/files/2018/02/fleur-de-lis_light.png');
+$image-bullet-dark:             url('https://2018.stlouis.wordcamp.org/files/2018/02/fleur-de-lis.png');
