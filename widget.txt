@@ -1,0 +1,8 @@
+Footer Widget
+
+<div class="footer-logo-wrapper">
+	<a href="https://www.facebook.com/WordCampSTL/" id="facebook" class="footer-social"><span class="screen-reader-text">WordCamp St. Louis Facebook</span></a>
+	<a href="https://twitter.com/wordcampstl/" id="twitter" class="footer-social"><span class="screen-reader-text">WordCamp St. Louis Twitter</span></a>
+	<a href="https://www.instagram.com/wordcampstl/" id="instagram" class="footer-social"><span class="screen-reader-text">WordCamp St. Louis Instagram</span></a>
+	<a href="" title="WordCamp St. Louis Homepage" rel="home" class="footer-logo"><img src="https://2018.stlouis.wordcamp.org/files/2018/02/logo.png" width="420" height="348" alt="WordCamp St. Louis Logo" /></a>
+</div>

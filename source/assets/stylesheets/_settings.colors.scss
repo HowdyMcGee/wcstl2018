@@ -214,10 +214,10 @@
 
 /* Brand */
 
-$color-brand-primary:             #d3461f;
-$color-brand-secondary:           #00b09c;
-$color-brand-tertiary:            #1d242a;
-$color-brand-quaternary:          #222;
+$color-brand-primary:             #EB4740;
+$color-brand-secondary:           #1A79B4;
+$color-brand-tertiary:            #58595B;
+$color-brand-quaternary:          #FFD750;
 
 @include cc($color-brand-primary, 'color-brand-primary');
 @include cc($color-brand-secondary, 'color-brand-secondary');
@@ -235,6 +235,7 @@ $color-text-strong:               rgba(0,0,0,.9);
 $color-text-invert:               rgba(255,255,255,.75);
 $color-text-weak-invert:          rgba(255,255,255,.6);
 $color-text-strong-invert:        rgba(255,255,255,.9);
+$color-text-strong-invert-full:	  rgba(255,255,255,1);
 
 @include cc($color-text, 'color-text');
 @include cc($color-text-weak, 'color-text-weak');

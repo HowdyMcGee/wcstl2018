@@ -28,7 +28,7 @@ gulp.task('browserSync', function() {
   })
 })
 
-// Start stylesheets task
+// Start stylesheets task for WordCamp site
 gulp.task('stylesheets', function() {
   gulp.src('source/assets/stylesheets/*.scss') // Get all *.scss files
     .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")})) // Show error
@@ -37,11 +37,12 @@ gulp.task('stylesheets', function() {
     .pipe(autoprefixer('last 2 version')) // Adding browser prefixes
     .pipe(sourcemaps.write()) // Writing sourcemaps
     .pipe(cssnano()) // Compress
-    .pipe(gulp.dest('build/assets/stylesheets'))
+    .pipe(gulp.dest('../www/wordpress-meta-environment/meta-repository/wordcamp.org/public_html/wp-content/themes/campsite-2017/styleguide'))
+	.pipe(gulp.dest('./build/assets/stylesheets'))
     .pipe(browserSync.reload({
       stream: true
     }));
-})
+});
 
 // Start images task
 gulp.task('images', function() {

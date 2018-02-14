@@ -18,14 +18,131 @@
 
 #colophon {
 
-  max-width: $container-max-width;
+  min-height: 30rem;
   margin-left: auto;
   margin-right: auto;
   margin-top: $unit-xl;
 
   text-align: center;
+  background-image: $image-cityscape;
+  background-repeat: repeat-x;
+  background-position: center top;
 
 }
+
+#footer-widgets	{
+
+	max-width: $container-max-width;
+	margin-left: auto;
+	margin-right: auto;
+	
+	.widget {
+		
+		background: transparent;
+		
+	}
+
+}
+
+.footer-logo-wrapper {
+	
+	position: relative;
+	text-align: center;
+	
+	a {
+	
+		display: inline-block;
+		
+	}
+	
+	.footer-logo {
+	
+		@include breakpoint( to-medium ) {
+			
+			display: block;
+			margin-top: 20px;
+			
+			img {
+				margin-left: auto;
+				margin-right: auto;
+			}
+			
+		}
+		
+	}
+	
+	.footer-social {
+		
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		position: absolute;
+		box-shadow: 0px 4px 5px #999;
+		animation: floating 3s linear infinite;
+		
+		@include breakpoint( to-medium ) {
+			position: static;
+			animation: none;
+		}
+		
+	}
+	
+	.screen-reader-text {
+		
+		clip: rect(1px,1px,1px,1px);
+		position: absolute;
+		height: 1px;
+		width: 1px;
+		overflow: hidden;
+		
+	}
+	
+	#facebook	{
+		
+		top: 20px;
+		left: 20px;
+		background-color: #4267b2;
+		animation-duration: 2s;
+		
+		&:before {
+			content: 'F';
+			color: #fff;
+		}
+		
+	}
+	
+	#twitter	{
+	
+		top: 40px;
+		right: 20px;
+		background-color: #1da1f2;
+		animation-duration: 4s;
+		
+		&:before {
+			content: 'T';
+			color: #fff;
+		}
+		
+	}
+	#instagram	{
+	
+		background-color: #3897f0;
+		
+		&:before {
+			content: 'I';
+			color: #fff;
+		}
+		
+	}
+	
+}
+
+@keyframes floating {
+	0% 		{transform: translateY(0%);}
+	50% 	{transform: translateY(10%);}
+	100% 	{transform: translateY(0%);}
+}
+
 
 .site-info-generator {
 
@@ -37,7 +154,10 @@
 
   // @include hide-text();
 
-  position: relative;
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  transform: rotate(-45deg);
 
   display: block;
   width: rem(60);
@@ -61,7 +181,7 @@
 
     position: absolute;
     left: 50%;
-    top: rem(30);
+    top: rem(50);
     z-index: -1;
 
     margin-left: -(rem(15));
