@@ -59,7 +59,7 @@
 #content {
 
   @include container-padding(1.5);
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 
 }
 
