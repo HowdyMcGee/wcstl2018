@@ -8,7 +8,7 @@ body {
   font-family: $font-body;
 
   color: $color-text;
-  background: #fff;
+  background: $background-color-footer;
 
   @include font-feature-settings("liga");
 
@@ -24,6 +24,10 @@ body {
 
   }
 
+}
+
+.site {
+	background-color: $color-explicit-white;
 }
 
 ::selection {
