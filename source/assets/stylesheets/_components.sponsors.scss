@@ -2,7 +2,9 @@
 ===================================================== */
 
 .wcorg-sponsors {
-
+	
+	margin-bottom: 4rem;
+	
   > div {
 
     display: flex;
@@ -73,6 +75,7 @@
 
   margin-bottom: 0;
   padding: $unit-xs;
+  width: 33.33%;
 
   img {
 
@@ -82,8 +85,7 @@
 
   }
 
-  h3,
-  .wcorg-sponsor-description p {
+  .wcorg-sponsor-description > *:not(img) {
 
     display: none;
 
