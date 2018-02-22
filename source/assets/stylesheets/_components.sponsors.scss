@@ -2,9 +2,9 @@
 ===================================================== */
 
 .wcorg-sponsors {
-	
+
 	margin-bottom: 4rem;
-	
+
   > div {
 
     display: flex;
@@ -72,10 +72,9 @@
 }
 
 .wcorg-sponsor {
-
-  margin-bottom: 0;
-  padding: $unit-xs;
-  width: 33.33%;
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid $color-border-weak;
 
   img {
 
@@ -84,12 +83,36 @@
     max-height: rem(140);
 
   }
-  
-  h3,
-  .wcorg-sponsor-description > *:not(img) {
 
-    display: none;
+  h3 {
+	  color: $color-brand-secondary;
 
+	  @media screen and (min-width: 769px) {
+			padding-left: calc(25% + 25px);
+			text-align: left;
+	  }
+  }
+
+  .wcorg-sponsor-description {
+
+	  > :first-child {
+		  @media screen and (min-width: 769px) {
+				float: left;
+				max-width: 25%;
+		  }
+	  }
+
+	  > :not(:first-child):not(.wp-post-image) {
+		  @media screen and (min-width: 769px) {
+				float: right;
+				width: calc(75% - 25px);
+				text-align: left;
+		  }
+	  }
+
+	  .wp-post-image {
+			margin-top: -50px;
+	  }
   }
 
   a {
