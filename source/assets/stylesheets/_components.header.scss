@@ -15,7 +15,6 @@
 
   background-repeat: no-repeat;
   background-position: 50% 0;
-  background-size: fixed;
   background-image: $site-hero-path-small;
 
   @include breakpoint(medium) {
@@ -47,6 +46,24 @@
     position: relative;
     z-index: $z-index-header;
 
+  }
+  
+  #header-navigation {
+	
+	z-index: 300;
+	
+	> .menu-toggle:before {
+		
+		content: 'Call to Action Menu';
+		
+	}
+	
+  }
+  
+  @include breakpoint( to-small ) {
+  
+	background-position: 90% 100%;
+  
   }
 
 }

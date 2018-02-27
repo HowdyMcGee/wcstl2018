@@ -3,7 +3,7 @@
 
 // Navigation
 //
-// Main navigation of the site
+// Main navigation and Secondary of the site
 //
 // Markup: navigation.html
 //
@@ -98,6 +98,85 @@
   }
 
 }
+
+/*
+ * Secondary navigation
+ *
+ * Secondary header navigation
+ */
+#secondary-menu {
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: $color-brand-tertiary;
+	
+	a {
+		
+		position: relative;
+		padding: 5px 10px 6px;
+		letter-spacing: 1px;
+		font-size: 12px;
+		font-weight: 400;
+		
+		&:after {
+		
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0px;
+			height: 3px;
+			background-color: $color-explicit-white;
+			transition: width 0.8s;
+			
+		}
+		
+		&:hover {
+			
+			background: $color-brand-tertiary;
+			
+		}
+		
+		&:hover:after {
+		
+			width: 100%;
+			
+		}
+		
+	}
+	
+	.current-menu-item > a {
+
+	  background-color: $color-brand-tertiary;
+	  
+	  &:after {
+		width: 100%;
+	  }
+
+	}
+	
+	@include breakpoint( to-small ) {
+		
+		position: static; 
+		
+	}
+	
+}
+
+.admin-bar #secondary-menu {
+	
+	top: 32px;
+	
+	@media only screen and ( max-width: 782px ) {
+		
+		top: 46px;
+		
+	}
+	
+}
+
 
 /*
  * Main navigation
@@ -308,7 +387,7 @@
 
     &.current-menu-item > a:after {
 
-      border-top-color: $color-text-strong;
+      border-top-color: $color-text-strong-invert-full;
 
     }
 
