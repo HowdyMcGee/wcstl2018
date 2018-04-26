@@ -13,14 +13,14 @@
 
     top: rem(6);
     margin-bottom: $unit-m;
-    width: 36%;
+    width: auto;
 
   }
 
   @include breakpoint(medium) {
 
     top: rem(10);
-    width: 44%;
+    width: auto;
 
   }
 

@@ -79,7 +79,7 @@
   img {
 
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1.1em;
     max-height: rem(140);
 
   }
@@ -114,6 +114,20 @@
 		@media screen and (min-width: 769px) {
 			margin-top: -50px;
 		}
+		
+		@include breakpoint(to-medium) {
+			max-width: 60%;
+		}
+		
+		@include breakpoint(to-small) {
+			max-width: 60%;
+		}
+		
+		@include breakpoint(to-extra-small) {
+			max-width: 80%;
+		}
+		
+		
 	  }
   }
 
@@ -132,7 +146,6 @@
     &:active img {
 
       filter:  grayscale(100%);
-      // filter:  sepia(100%);
       opacity: .75;
 
     }
@@ -241,8 +254,8 @@
 
 }
 
-// Make our big sponsors cooler.
-.wcorg-sponsor-level-gateway-arch {
+/* .wcorg-sponsor-level-gateway-arch { */
+.wcorg-sponsor-level-forest-park {
 	
 	.wcorg-sponsor {
 		
@@ -261,6 +274,18 @@
 				float: none;
 				max-width: 40%;
 				margin: 0 auto 1.1em;
+				
+				@include breakpoint(to-medium) {
+					max-width: 80%;
+				}
+				
+				@include breakpoint(to-small) {
+					max-width: 80%;
+				}
+				
+				@include breakpoint(to-extra-small) {
+					max-width: 100%;
+				}
 				
 			}
 			
