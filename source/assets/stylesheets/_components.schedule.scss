@@ -130,6 +130,18 @@
     &.afternoon-break {
 
       background-color: $color-brand-secondary;
+	  
+	  .wcpt-time,
+	  .wcpt-session-title {
+		color: $color-explicit-white;
+	  }
+	  
+	  .wcb-favourite-session {
+		.wcpt-time,
+		.wcpt-session-title {
+			color: $color-explicit-black;
+		}
+	  }
 
     }
 

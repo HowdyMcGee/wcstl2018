@@ -241,6 +241,42 @@
 
 }
 
+// Make our big sponsors cooler.
+.wcorg-sponsor-level-gateway-arch {
+	
+	.wcorg-sponsor {
+		
+		> h3 {
+			
+			float: none;
+			padding: 0;
+			text-align: center;
+			
+		}
+		
+		.wcorg-sponsor-description {
+			
+			> img:first-of-type {
+				
+				float: none;
+				max-width: 40%;
+				margin: 0 auto 1.1em;
+				
+			}
+			
+			> :not(:first-child):not(.wp-post-image) {
+				
+				float: none;
+				margin: 0 auto 1.1em;
+				
+			}
+			
+		}
+		
+	}
+	
+}
+
 // Hide
 .wcorg-sponsor-level-community-summit-individual,
 .wcorg-sponsor-level-community-summit-gold,
